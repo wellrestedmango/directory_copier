@@ -1,9 +1,4 @@
-import os
-import glob
-import shutil
-import re
-import hashlib
-import argparse
+import os, glob, shutil, re, hashlib, argparse
 from argparse import ArgumentParser
 
 #taking in the path to crawl and the path to save de-duped files to
@@ -20,7 +15,6 @@ duplicate_files = 0
 #taking in arguments
 src_dir = args.src
 dst_dir = args.dst
-
 
 #transverse the directory
 for p in glob.glob('**', recursive=True, root_dir=src_dir):
